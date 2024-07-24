@@ -1,0 +1,5 @@
+- Three axes for programming
+	- Correctness, Design and Style
+- Abstract, Precision
+- Git, Github Pages, Netlify,
+- Common Passwords. Brute Force and Dictionary Attacks, 2FA, password Manager, encryption, https
