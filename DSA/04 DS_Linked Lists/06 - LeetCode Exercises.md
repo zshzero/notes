@@ -195,7 +195,7 @@ def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:
     p2Itr = None
     return p1Tail
 ```
-[83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list)
+### [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list)
 
 ```py
 # BruteForce on unsorted List 
@@ -262,7 +262,7 @@ def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
     return head
 ```
 
-[1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer)
+### [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer)
 
 ```py
 # BruteForce
@@ -315,7 +315,7 @@ def getDecimalValue(self, head: Optional[ListNode]) -> int:
     return s
 ```
 
-[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
+### [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
 ```py
 # 3 pointer
 # Time complexity: O(N)
@@ -367,7 +367,7 @@ def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
     return back
 ```
 
-[92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)
+### [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)
 ```py
 # 4 pointer with dummy Node to avoid edge cases
 # Time complexity: O(N)

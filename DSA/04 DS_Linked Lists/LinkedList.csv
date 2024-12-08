@@ -26,12 +26,12 @@ Sol. After Loop, Return None if itr is None"
 Assign value and return True.","O(n)","Same as Get Node and handled there"
 "Insert","Check EC1. Get prev node. Check EC2. Create node. 
 Point it to prev node's next. Point prev node to new node. Return True.","O(n)","1. When LL is empty and insert to 0
-Sol. Check for index 0 and prepend instead
+Sol. Prepend node
 2. After getting node, check for Get Node's EC1 and EC2
 Sol. Return None if prev node is None"
 "Remove","Check EC1. Get prev node. Check EC2. Assign ele with prev node's next.
 Point prev node to ele's next. Cleanup by pointing ele's to None.
-Return ele.",,"1. When LL is empty and insert to 0
+Return ele.","O(n)","1. When LL is empty and insert to 0
 Sol. Check for index 0 and pop first instead
 2. After getting node, check for Get Node's EC1 and EC2
 Sol. Return None if prev node is None"
