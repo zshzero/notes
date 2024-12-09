@@ -1,0 +1,44 @@
+"Operation","Approach","Time & Space 
+Complexity","Edge Cases"
+"Print","Assign head to a tempItr and loop till it is None.","O(n)","-"
+"Append","Point tail's next to new node and new node's prev to tail.
+Assign new node as tail. Returm True.","O(1)","1. When DLL has 0 nodes, tail will be None 
+Sol. Create node and assign it as head and tail. Return True"
+"Pop","Create var ele and assign it to tail. Assign tail's prev as tail.
+Point tail's next to None and ele's prev to None. Return ele.","O(1)","1. When DLL has 0 nodes, there is nothing to remove
+Sol. Just return None
+2. When DLL has 1 nodes, tail's next, prev will be None
+Sol. Assign None to head and tail and return ele"
+"Prepend","Point new node's next to head and head's prev to new node.
+Assign new node to head. Return True.","O(1)","1. When DLL has 0 nodes, head will be None
+Sol. Create node and assign it as head and tail. Return True"
+"Pop First","Create var ele and assign ele's next to head. Assign head's prev as None.
+Point ele's next to None. Return ele.","O(1)","1. When DLL has 0 nodes, there is nothing to remove
+Sol. Just return None
+2. When DLL has 1 nodes, 2nd node will be None. 
+Sol. Assign None to head and tail and return ele"
+"Get Node","Check EC1. Create itr var and assign head to it.
+Loop until index is less than or equal to index or itr is none. 
+Check EC2. Return itr.","O(n)","1. Check for negative index.
+Sol. Return None if index is less than 0
+2. Check for Out of bound Exception
+Sol. After Loop, Return None if itr is None"
+"Set Node","Get node, ele using index. If it is None, return False.
+Assign value and return True.","O(n)","Same as Get Node and handled there"
+"Insert","Check EC1. Get node. Check EC2. Create new node.
+Create before and after and assign after's prev and after resp.
+Point new node's prev and next to before and after resp.
+Point both before's next and after's prev to new node. Return True.","O(n)","1. When DLL is empty and insert to 0
+Sol Prepend node
+2. After getting node, check for Get Node's EC1 and EC2
+Sol. Return None if prev node is None"
+"Remove","Check EC1. Get node. Check EC2 and EC3. 
+Create before and after and assign node's prev and node's next resp.
+Point after's prev and before's next to before and after resp.
+Cleanup by pointing node's ptrs to None. Return ele.","O(n)","1. When LL is empty and insert to 0
+Sol. Check for index 0 and pop first instead
+2. After getting node, check for Get Node's EC1 and EC2
+Sol. Return None if prev node is None
+3. When node to be removed is tail
+Sol. Pop node"
+,,,
