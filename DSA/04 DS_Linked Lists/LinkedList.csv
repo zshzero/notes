@@ -15,7 +15,7 @@ Sol. Create new node and assign it as head and tail. Return True"
 "Pop First","Create var ele and assign head to it. Assign head to its next.
 Point ele to None. Return ele.","O(1)","1. When LL has 0 nodes, there is nothing to remove
 Sol. Just return None
-2. When LL has 1 nodes, 2nd node will be None. 
+2. When LL has 1 nodes, head's next will be None. 
 Sol. Assign None to head and tail, decr length and return ele"
 "Get Node","Check EC1. Create itr var and assign head to it. Create incr.
 Loop until itr is none and incr less than index. Check EC2. Return itr.","O(n)","1. Check for negative index.

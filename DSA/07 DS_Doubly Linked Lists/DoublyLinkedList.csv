@@ -15,7 +15,7 @@ Sol. Create node and assign it as head and tail. Return True"
 "Pop First","Create var ele and assign ele's next to head. Assign head's prev as None.
 Point ele's next to None. Return ele.","O(1)","1. When DLL has 0 nodes, there is nothing to remove
 Sol. Just return None
-2. When DLL has 1 nodes, 2nd node will be None. 
+2. When DLL has 1 nodes, head's next, prev will be None. 
 Sol. Assign None to head and tail and return ele"
 "Get Node","Check EC1. Create itr var and assign head to it.
 Loop until index is less than or equal to index or itr is none. 
