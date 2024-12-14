@@ -1,0 +1,26 @@
+"Operation","Approach","Time & Space 
+Complexity","Edge Cases"
+"Insert","Create itr. Loop until its None and check: 
+- if value equals itr's value, return False
+- if value < node, assign new node if left is None else move left
+- if value > node, assign new node if right is None else move right","Average Case: O(log n)
+Worst Case: O(n) [resembles LL 
+when tree becomes unbalanced]","1. When BST has 0 node, root/itr will be None
+Sol. Create new node and assign it as root. Return True"
+"Contains","Create itr. Loop until its None and check: 
+- if value < node, then move left
+- if value > node, then move right
+- if value equals itr's value, return itr","Average Case: O(log n)
+Worst Case: O(n) (in an unbalanced tree)","-"
+,,,
+,,,
+,,,
+"Full Tree","Every Node points to either 0 or 2 nodes",,
+"Leaf Node","Node that doesn't have children ",,
+"Perfect Tree","Full tree + all leaf nodes should be present in last level",,
+"Complete Tree","All nodes are as far left as possible without gaps",,
+,,,
+"Binary Search Tree","Each node has at most two children
+Left subtree contains nodes with values less than parent's value
+Right subtree contains nodes with values greater than parent's value",,
+,,,
