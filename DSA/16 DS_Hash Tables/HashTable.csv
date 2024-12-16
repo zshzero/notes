@@ -1,0 +1,28 @@
+"Operation","Approach","Time & Space 
+Complexity","Edge Cases"
+"Hash Function","For each ch in key, multiply ascii of it with prime no. and add it to 
+hashvalue. Modulo it with length of data map and return bucket","O(n) in nature but considered O(1) as 
+its same no. of ops for particular length ","-"
+"Set","Hash key to determine bucket. If bucket it empty, initialize empty
+list. Append KV to list","O(1)","-"
+"Get","Hash key to determine bucket. If bucket it empty, return none. 
+Iterate bucket list and return matched KV","O(1)","-"
+"Keys","Initialize key list. Iterate each buckets and its list. Append it to 
+keys. Return keys","O(n) where n is size of HT","-"
+"Is Common 
+Elements","Add all ele's from 1st list to dict. Loop 2nd list and check if 
+its present in dict","O(n + m) and O(n)",
+,,,
+,,,
+,,,
+"Hash Table","Data Structure that maps keys to values. It uses a hash function to 
+compute an index into an array of buckets/slots, from which the 
+desired value can be found.",,
+"Hash Function","Converts key into an index in array. Its one way and deterministic",,
+"Buckets/Slots","Buckets/Slots are where key-value pairs are stored. 
+Use prime number of buckets to reduce likelihood of collisions. 
+Coz, prime number doesn't have common factors with 
+typical hash values, leading to even spread of keys across buckets.",,
+"Hash Collision","Occurs when two different keys generate the same hash value
+It can be managed by Chaining or Open Addressing",,
+,,,
