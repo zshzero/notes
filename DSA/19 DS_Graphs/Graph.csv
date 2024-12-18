@@ -1,0 +1,35 @@
+"Operation","Approach","Time & Space 
+Complexity","Edge Cases"
+"Print","Traverse all elements in matrix/KV list","Adjacency Matrix - O(|V|^2)
+Adjacent List - O(|V| + |E|)","-"
+"Add Vertex","Return False if vertex is already in adj_list. Else, add
+empty list to adj_list. Return True.","Adjacency Matrix - O(|V|^2)
+Adjacent List - O(1)","-"
+"Add Edge","Return False if any of the vertices are not present.
+Add v1 to v2's list and vice versa. Return True.","Adjacency Matrix - O(1)
+Adjacent List - O(1)","Adding duplicate check increases time 
+complexity from O(1) to O(n)"
+"Remove Edge","Return False if any of the vertices are not present.
+Remove v1 from v2's list and vice versa. Return True.","Adjacency Matrix - O(1)
+Adjacent List - O(|E|)","1. Removal of non-existent edges would fail
+Sol. Use try-except block to handle it"
+"Remove Vertex","Return False if vertex is not in adj_list. Else, loop vertex's
+list and remove vertex from other vertices. Delete vertex 
+from adj_list. Return True.","Adjacency Matrix - O(|V|^2)
+Adjacent List - O(|V| + |E|)","-"
+,,,
+,,,
+,,,
+"Vertices (Nodes)","Fundamental units of graph, representing objects. 
+Each vertex is a point in graph.",,
+"Edge","Connections between pairs of vertices, representing 
+relationship between objects.",,
+"Directed Edge (Arc)","Edge with a direction indicating a one-way relationship.",,
+"Undirected Edge","Edge without direction indicating a two-way relationship.",,
+"Weight","Value associated with edge, often representing cost, 
+distance, or any quantitative measure.",,
+"Adjacency Matrix","Way of representing graph in matrix form. It Indicates 
+whether there is edge from vertex 𝑖 to vertex 𝑗.",,
+"Adjacent List","Way to representing graph in list form. Each vertex has 
+a list of other vertices it is connected to.",,
+,,,
