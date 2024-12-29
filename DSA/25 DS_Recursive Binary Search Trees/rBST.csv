@@ -1,0 +1,30 @@
+"Operation","Approach","Time & Space 
+Complexity","Edge Cases"
+"Insert","Create a recursive function and check: 
+- if node equals None, return new node
+- if value < node, call itself with node's left as curr node
+- elif value > node, call itself with node's right as curr node
+- node equals value isn't req. as it returns curr node by default","Average Case: O(log n)
+Worst Case: O(n) [resembles LL 
+when tree becomes unbalanced]","1. When BST has 0 node, root will be None
+Sol. Create new node and assign it as root. Return True"
+"Delete","Create a recursive function and check: 
+- if node equals None, return None
+- if value < node, call itself with node's left as curr node
+- elif value > node, call itself with node's right as curr node
+- else node equals value, check for 4 cases:
+    - if it has no children, return None
+    - elif has only left child, assign curr node as node's left
+    - elif has only right child, assign curr node as node's right
+    - elif has both children, calculate min value node from curr's 
+right. assign that to curr node and delete the min value node ","Average Case: O(log n)
+Worst Case: O(n) [resembles LL 
+when tree becomes unbalanced]","1. Definition for min value method
+Sol. Traverse sub tree to its left and return last node"
+"Contains","Create a recursive function and check: 
+- if node equals None, return False
+- if value < node, call itself with node's left as curr node
+- if value > node, call itself with node's right as curr node
+- if node equals value, return True","Average Case: O(log n)
+Worst Case: O(n) (in an unbalanced tree)","-"
+,,,
