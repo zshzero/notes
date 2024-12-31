@@ -1,0 +1,30 @@
+"Operation","Approach","Time & Space 
+Complexity","Edge Cases"
+"BFS","Create resultant list and queue with root node to store nodes.
+Until queue is empty, Pop front and save it as node, append 
+node's val to result. If node has left node, append 
+it to queue. If node has right node, append it to queue ","O(n)","1. When BST has 0 node, root will be None
+Sol. Print empty bst and return"
+"Traverse DFS Preorder","Create recursive func initialized with result and called by root.
+Base case: if node equals None, then return
+- append node val to result
+- if node has left node, then call itself with node's left
+- if node has right node, then call itself with node's right","O(n)","-"
+"Traverse DFS Postorder","Create recursive func initialized with result and called by root.
+Base case: if node equals None, then return
+- if node has left node, then call itself with node's left
+- if node has right node, then call itself with node's right
+- append node val to result","O(n)","-"
+"Traverse DFS Inorder","Create recursive func initialized with result and called by root.
+Base case: if node equals None, then return
+- if node has left node, then call itself with node's left
+- append node val to result
+- if node has right node, then call itself with node's right","O(n)","-"
+,,,
+,,,
+,,,
+"Breadth First Search","Traverse Tree such that all nodes present in the same level are 
+traversed completely before traversing the next level.",,
+"Depth First Search","Traverse Tree such that deepest node is visited first and then 
+backtracks to its parent node if no sibling of that node exists",,
+,,,
