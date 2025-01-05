@@ -1,0 +1,38 @@
+"Sort","Algorithm","Time & Space Complexity","Edge Cases"
+"Bubble","- Use loop var i that runs from len(l)-1 to 1, decrementing by 1 
+in each itr. This loop tracks curr pos in list.
+- Within outer loop, use another loop var j that runs from 0 to i-1. 
+This loop traverses unsorted part of list.
+- Compare adj ele l[j] and l[j+1]. If l[j] is greater than l[j+1], 
+swap them to put smaller element first.
+- Repeat process until the entire list is sorted, with each pass 
+pushing the next largest element to its correct position.
+- Return sorted list l","Worst, Average and 
+Best case: O(n^2)","-"
+"Selection","- Use loop var i that runs from 0 to len(l)-2 to track curr pos 
+in list that needs sorting.
+- Set min_index to i. This var keeps track of index of the min ele 
+found in unsorted part of the list.
+- Within outer loop, use another loop var j that runs from 
+i+1 to len(l)-1 to traverse the unsorted part of the list.
+- Compare ele l[min_index] and l[j]. If l[j] is smaller than l[min_index], 
+update min_index to j.
+- After inner loop completes, swap ele at index i with ele at min_index.
+- Repeat this process until the entire list is sorted.
+- Return sorted list l","Worst, Average and 
+Best case: O(n^2)","-"
+"Insertion","- Use loop var i that runs from 1 to len(l)-1 to iterate list starting 
+from second ele.
+- Set key to l[i]. This var stores curr ele to be inserted in its 
+correct position.
+- Set j to i-1. This var is used to traverse sorted portion of the list.
+- While j is greater than or equal to 0 and l[j] is greater than key:
+    - Move l[j] one position to the right, i.e., set l[j + 1] to l[j].
+    - Decrement j by 1.
+- Insert the key at position j + 1.
+- Repeat this process until entire list is sorted.
+- Return sorted list l.","Worst and Average: 
+O(n^2)
+Best case:
+O(n) ","-"
+,,,
