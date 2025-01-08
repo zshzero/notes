@@ -1,0 +1,20 @@
+"Sort","Algorithm","Time & Space 
+Complexity","Edge Cases"
+"Merge Func","- Create empty list result to store merged output.
+- Initialize two index variables i and j to 0 to traverse l1 and l2 respectively.
+- While both, i is less than len of l1 and j is less than len of l2:
+- Compare l1[i] and l2[j].
+- If l1[i] is smaller, append l1[i] to result and increment i by 1.
+- Otherwise, append l2[j] to result and increment j by 1.
+- While i is less than the length of l1, append remaining ele of l1 to result.
+- While j is less than the length of l2, append remaining ele of l2 to result.
+- Return merged list result.","Time - O(n+m)
+Space - O(n+m)","-"
+"Merge Sort","- Base case: return list l when len of l is less than or equal to 1(meaning sorted)
+- Calculate midpoint mid of list.
+- Recursively sort left half of list l from start to mid.
+- Recursively sort right half of list l from to end.
+- Merge two sorted halves using the merge function.
+- Return sorted list.","Time - O(n logn)
+Space - O(n)","-"
+,,,
