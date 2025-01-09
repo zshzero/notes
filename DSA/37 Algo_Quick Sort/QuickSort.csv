@@ -1,0 +1,21 @@
+"Sort","Algorithm","Time & Space 
+Complexity","Edge Cases"
+"Pivot Func","- Initialize swap index as pivot index
+- Iterate from pivot_index+1 to end_index+1 to check:
+- If current ele is less than pivot ele:
+- Incr swap index and swap curr ele with swap ele.
+- Swap pivot ele with swap ele.
+- Return swap index.","Time - O(n)
+Space - O(n+m)","-"
+"Merge Sort","- If left index is less than right index, proceed partitioning:
+- Call pivot func to partition list around pivot ele and get new pivot index.
+- Recursively call itself on sublist to left of pivot.
+- Recursively call itself on sublist to right of pivot.
+- Return sorted list.","Time - 
+Best and Average case: O(n logn)
+Worst case: O(n^2)
+Space -
+Best and Average case: O(logn)
+Worst case: O(n)
+","-"
+,,,
