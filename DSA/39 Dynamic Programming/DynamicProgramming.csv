@@ -1,0 +1,47 @@
+"Sort","Algorithm","Time & Space 
+Complexity","Edge Cases"
+"Recursive
+Fibonacci","- Initialize global counter to 0.
+- Define func r_fib that takes int as arg.
+- Use global var, counter to keep track of how many times func is called.
+- Incr counter by 1 each time func is called.
+- Base case: If n is equal to 0 or 1, return n.
+- If n > 1, recursively call r_fib func for n-1, n-2 and return added results.","Time - O(2^n)
+Space - O(n)","-"
+"Recursive
+Memoized
+Fibonacci","- Initialize global counter to 0.
+- Define func called r_memo_fib that takes int as arg.
+- Use global var, counter to keep track of how many times func is called.
+- Incr counter by 1 each time func is called.
+- Check if val of memo[n] is already computed and stored. 
+If it is, return stored value.
+- Base case: If n is 0 or 1, return n.
+- If val of memo[n] is not computed yet, recursively call 
+r_memo_fib function for n-1, n-2 and add their results.
+- Store computed value in memo[n].
+- Return val of memo[n].","Time -  O(2n-1)
+Space - O(n+n)
+","-"
+"Iterative
+(Bottom Up) 
+Fibonacci","- Define func called itr_fib that takes int as arg.
+- Initialize list, fib_store with first two Fibonacci num: 0 and 1.
+- Use global var named counter to track itrs in loop.
+- For each number i from 2 to n+1:
+- Incr counter by 1.
+- Compute next Fibonacci num by adding previous two Fibonacci num 
+stored in fib_store at positions i-1 and i-2.
+- Append computed Fibonacci number to fib_store list.
+- Once loop is finished, return Fibonacci num at pos n from fib_store list.","Time -  O(n-1)
+Space - O(n)
+","-"
+,,,
+,,,
+"Overlapping 
+subproblems","Problem broken down into smaller subproblems, and some of those 
+subproblems are solved multiple times.",,
+"Optimal 
+Substructure","Solution to given problem can be obtained by combination of 
+optimal solutions to its subproblems.",,
+,,,
