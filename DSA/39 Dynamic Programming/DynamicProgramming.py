@@ -30,3 +30,15 @@ def itr_fib(n: int) -> int:
     fib_store.append(fib_next)
   return fib_store[n]
 print(itr_fib(30), counter) # 832040 29
+
+counter = 0
+def itr_fib(n: int) -> int:
+    if n == 0 or n == 1:
+        return n
+    global counter 
+    a, b = 0, 1
+    for _ in range(2,n+1):
+        counter += 1
+        a, b = b, a+b
+    return b
+print(itr_fib(30), counter) # 832040 29

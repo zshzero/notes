@@ -52,7 +52,7 @@ def isValidBST(self, root: Optional[TreeNode]) -> bool:
     return traverse_dfs_inorder(root, -inf, inf)
 ```
 
-### [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)
+### [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)
 
 ```py
 # DFS InOrder

@@ -130,28 +130,58 @@ def insertionSortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
 ### [75. Sort Colors](https://leetcode.com/problems/sort-colors)
 
 ```py
-# Dict
+# Bucket Sort using Dict
 # Time Complexity - O(n + n) => O(n)
-# Space Complexity - O(n)
+# Space Complexity - O(1)
 def sortColors(self, nums: List[int]) -> None:
     """
     Do not return anything, modify nums in-place instead.
     """
     # initialize dict to keep track of count
-    d = {}
+    bucket = {}
     # traverse nums and update dict
     for num in nums:
-        if num in d: d[num] += 1
-        else: d[num] = 1
+        if num in bucket: bucket[num] += 1
+        else: bucket[num] = 1
 
     # create var index to track entire nums
     i = 0
     # loop each key from dict
     for key in [0,1,2]:
         # check if key is present in dict
-        if key not in d: continue
+        if key not in bucket: continue
         # itr till key's val and update nums val
-        for _ in range(d[key]):
+        for _ in range(bucket[key]):
             nums[i] = key
+            i += 1
+```
+
+```py
+# Quicksort Partition - 3 pointer
+# Time Complexity - O(n)
+# Space Complexity - O(1)
+def sortColors(self, nums):
+    """
+    :type nums: List[int]
+    :rtype: None Do not return anything, modify nums in-place instead.
+    """
+    # intialize left, mid and right ptr
+    l, m, r = 0, 0, len(nums)-1
+
+    # loop until mid passes right
+    while m <= r:
+        # swap with left if mid is 0
+        if nums[m] == 0:
+            nums[m], nums[l] = nums[l], nums[m]
+            # incr both mid and left
+            m += 1
+            l += 1
+        # swap with right if mid is 2
+        elif nums[m] == 2:
+            nums[m], nums[r] = nums[r], nums[m]
+            # decr only right as mid is following 1
+            r -= 1
+        else:
+            # do nothing and incr mid if mid is 1
             i += 1
 ```

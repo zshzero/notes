@@ -204,36 +204,23 @@ def backspaceCompare(self, s: str, t: str) -> bool:
 
 ```py
 class MyQueue:
-    def __init__(self, value = None):
-        if not value:
-            self.stack1 = []
-        else:        
-            self.stack1.append(value)
-        self.stack2 = []
-        
-    def peek(self):
-        peekIndex = len(self.stack1) - 1
-        return self.stack1[peekIndex]
-    
-    def is_empty(self):
-        return len(self.stack1) == 0
-        
-    def enqueue(self, value):
-        for _ in range(len(self.stack1)):
-            self.stack2.append(self.stack1.pop())
-            
-        self.stack1.append(value)
-        
-        for _ in range(len(self.stack2)):
-            self.stack1.append(self.stack2.pop())
-            
+    def __init__(self):
+        self.q_list = []        
+
+    def push(self, x: int) -> None:
+        self.q_list.append(x)
         return True
-            
-    def dequeue(self):
-        if not self.stack1:
-            return
-        
-        return self.stack1.pop()
+
+    def pop(self) -> int:
+        return self.q_list.pop(0)
+
+    def peek(self) -> int:
+        if self.empty():
+            return None
+        return self.q_list[0]
+
+    def empty(self) -> bool:
+        return len(self.q_list) == 0
 ```
 
 ```py

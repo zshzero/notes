@@ -62,6 +62,25 @@ def findDuplicates(self, nums: List[int]) -> List[int]:
     return dups
 ```
 
+```py
+# Mark visited val (works only coz the values are in range [1, n])
+# Time Complexity - O(n)
+# Space Complexity - O(1)
+def findDuplicates(self, nums: List[int]) -> List[int]:
+    # initialize dups list
+    dups = []
+    
+    # for every num in nums, check if if val is neg and visited 
+    for n in nums:
+        # get original val
+        n = abs(n)
+        if nums[n-1] > 0:
+            nums[n-1] = -nums[n-1]
+        else:
+            dups.append(n)
+    return dups
+```
+
 ### [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)
 
 ```py
@@ -246,7 +265,7 @@ def subarraySum(self, nums: List[int], k: int) -> int:
     return count
 ```
 
-### [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
+### [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
 
 ```py
 # Two pointer

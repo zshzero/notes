@@ -26,6 +26,32 @@ def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
     return r_insert(0,len(nums) - 1)
 ```
 
+### [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)
+
+```py
+# Recursion
+# Time Complexity - O(n)
+# Space Complexity - O(n)(node creation) + O(log n)(recursion stack)
+def sortedListToBST(self, head: Optional[ListNode]) -> Optional[TreeNode]:
+    def r_insert(node):
+        if not node: return None
+        if not node.next: return TreeNode(node.val)
+
+        left, right, left_prev = node, node, None
+        while right and right.next:
+            left_prev = left
+            left = left.next
+            right = right.next.next
+        
+        tree_node = TreeNode(left.val)
+        left_prev.next = None
+        tree_node.left = r_insert(node)
+        tree_node.right = r_insert(left.next)
+        return tree_node
+    
+    return r_insert(head)
+```
+
 ### [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
 
 ```py
