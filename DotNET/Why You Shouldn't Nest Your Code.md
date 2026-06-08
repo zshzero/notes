@@ -1,5 +1,0 @@
-- Methods to De-Nest
-	- Extraction
-		- Extract the inner part of the loop into its own function
-	- Inversion
-		- Put the unhappy flow first (Like validation gate-keeping) and happy path moves down the method

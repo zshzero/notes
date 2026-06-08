@@ -1,9 +1,0 @@
-- Syntax difference between C and Python
-- Python Data Types
-- Python Interpreter - no compilation - interprets line by line
-- Try catch - Handle Exception
-- Dividing by int in python avoids truncation
-- main function isn't called auto and needs to be called explicitly 
-- DoWhile isn't present in python - instead create a infinite loop and break out when condition is met
-- variable created inside is function is not scoped to its indentation (where variables are scoped under braces in C)
-- Slicing list

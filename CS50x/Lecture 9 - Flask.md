@@ -1,3 +1,0 @@
-- Jinja Syntax
-- GET requests can be plugged into emails, sent via chats and make sure do malicious where POST request can avoid this - Its called CSRF
-- JSON

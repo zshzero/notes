@@ -1,6 +1,0 @@
-- Routers, TCP/IP, IP address, Port, Data Fragmentation, Ensures all packets get there or none of it at all, UDP, DNS, HTTP and HTTPS, URI, URL, URN, GET and POST - request and response content, statys code, cURL
-- HTML - Symantic Tags - Element tree structure and hierarchy 
-	- Valdator.w3.org to validate hosted html document
-- CSS - selectors
-	- Child inherits the properties of parent by default
-- JS - Manipulating HTML elements
